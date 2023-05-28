@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://elanta.app/nazar/quarty-demo/dark/about-us.html -->
+<html lang="zxx" class="swup-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Required meta tags -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- color of address bar in mobile browser -->
+  <meta name="theme-color" content="#28292C">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="https://elanta.app/nazar/quarty-demo/dark/img/thumbnail.ico" type="image/x-icon">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./Quarty_files/bootstrap.min.css">
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="./Quarty_files/font-awesome.min.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="./Quarty_files/swiper.min.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="./Quarty_files/fancybox.min.css">
+  <!-- mapbox css -->
+  <link href="./Quarty_files/mapbox-style.css" rel="stylesheet">
+  <!-- main css -->
+  <link rel="stylesheet" href="./Quarty_files/style.css">
+
+  <title>Quarty</title>
+<style id="smooth-scrollbar-style">
+[data-scrollbar] {
+  display: block;
+  position: relative;
+}
+
+.scroll-content {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.scrollbar-track {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  background: rgba(222, 222, 222, .75);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: opacity 0.5s 0.5s ease-out;
+          transition: opacity 0.5s 0.5s ease-out;
+}
+.scrollbar-track.show,
+.scrollbar-track:hover {
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.scrollbar-track-x {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+.scrollbar-track-y {
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100%;
+}
+.scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 4px;
+}
+</style></head>
+
+<body>
+
+  <div class="qrt-app">
+    <div class="qrt-preloader" style="opacity: 0; display: none;">
+      <div class="qrt-preloader-content" style="opacity: 1;">
+        <div class="qrt-logo">
+          <img src="./Quarty_files/logo.svg" alt="Quarty">
+        </div>
+        <div id="preloader" class="qrt-preloader-load" style="position: relative;"><svg viewBox="0 0 100 1.7" preserveAspectRatio="none" style="width: 100%; height: 100%;"><path d="M 0,0.85 L 100,0.85" stroke="#eee" stroke-width="1.7" fill-opacity="0"></path><path d="M 0,0.85 L 100,0.85" stroke="#555" stroke-width="1.7" fill-opacity="0" style="stroke-dasharray: 100, 100; stroke-dashoffset: 0;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(85, 85, 85);">100 %</div></div>
+      </div>
+    </div>
+    <div id="cursor" class="qrt-cursor" style="transform: translate3d(505px, 293px, 0px);">
+      <div></div>
+      <div class="qrt-follower" style="transform: scale(0); background: rgb(255, 255, 255);"><i class="fas fa-circle-notch"></i></div>
+    </div>
+    <div class="qrt-top-bar">
+      <a href="https://elanta.app/nazar/quarty-demo/dark/home-slider.html" class="qrt-symbol qrt-cursor-scale qrt-anima-link"><img src="./Quarty_files/logo-sm.svg" alt="Symbol"></a>
+      <a href="https://elanta.app/nazar/quarty-demo/dark/home-slider.html" class="qrt-logo qrt-cursor-color qrt-cursor-scale qrt-anima-link">
+        <img src="./Quarty_files/logo.svg" alt="Quarty">
+      </a>
+      <div class="qrt-menu">
+        <div id="qrt-dynamic-menu" class="qrt-dynamic-menu" data-swup="1">
+          <nav>
+            <ul>
+              <li>
+                <a class="qrt-mobile-fix" href="https://elanta.app/nazar/quarty-demo/dark/home-video.html">Home</a>
+                <ul>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/home-slider.html">Home slider</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/home-video.html">Home video</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/home-image.html">Home image</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/home-combined.html">Home combined</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/home-classic.html">Home classic</a></li>
+                </ul>
+              </li>
+              <li class="current-menu-item">
+                <a class="qrt-mobile-fix" href="https://elanta.app/nazar/quarty-demo/dark/about-us.html">About</a>
+                <ul>
+                  <li class="qrt-this-page"><a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html">About us</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/about-me.html">About me</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/about-us-classic.html">About us classic</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/about-me-classic.html">About me classic</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="qrt-mobile-fix" href="https://elanta.app/nazar/quarty-demo/dark/portfolio-half-masonry-1.html">Portfolio</a>
+                <ul>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/portfolio-half-masonry-1.html">Half masonry</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/portfolio-half-masonry-2.html">Half masonry 2</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/portfolio-half-grid-1-col.html">Half grid 1 column</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/portfolio-half-grid-2-col.html">Half grid 2 column</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/portfolio-fs-masonry-1.html">fullscreen masonry</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/portfolio-fs-masonry-2.html">fullscreen masonry 2</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/portfolio-fs-grid-3-col.html">fullscreen grid 3 column</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/portfolio-fs-grid-2-col.html">fullscreen grid 2 column</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/single-work-1.html">Single work 1</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/single-work-2.html">Single work 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="qrt-mobile-fix" href="https://elanta.app/nazar/quarty-demo/dark/contact.html">Contact</a>
+                <ul>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/contact.html">Contact type 1</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/contact-2.html">Contact type 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="qrt-mobile-fix" href="https://elanta.app/nazar/quarty-demo/dark/blog-list.html">Blog</a>
+                <ul>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/blog-list.html">Blog list</a></li>
+                  <li><a href="https://elanta.app/nazar/quarty-demo/dark/publication.html">Publication</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="qrt-buttons">
+        <a href="https://elanta.app/nazar/quarty-demo/dark/contact-2.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-send-request qrt-anima-link qrt-mr-20"><span>Send request</span></a>
+        <div class="qrt-menu-btn qrt-cursor-color qrt-cursor-scale"><span></span></div>
+        <div class="qrt-search-btn qrt-cursor-color qrt-cursor-scale"><i class="fas fa-search"></i></div>
+        <div class="qrt-info-btn qrt-cursor-color qrt-cursor-scale"><span></span></div>
+      </div>
+      <div class="qrt-search">
+        <form>
+          <input type="text" placeholder="Enter search query">
+        </form>
+      </div>
+      <div class="qrt-info" id="qrt-scroll-info" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;"><div class="scroll-content">
+        <div class="qrt-info-frame">
+          <ul class="qrt-table">
+            <li>
+              <h5>Country</h5><span>Canada</span>
+            </li>
+            <li>
+              <h5>City</h5><span>Toronto</span>
+            </li>
+            <li>
+              <h5>Street</h5><span>North Avenue 31B, </span>
+            </li>
+            <li>
+              <h5>Email</h5><span><a class="qrt-cursor-scale qrt-cursor-color" href="mailto:quarty.inbox@mail.com" data-no-swup="">quarty.inbox@mail.com</a></span>
+            </li>
+            <li>
+              <h5>Phone</h5><span><a class="qrt-cursor-scale qrt-cursor-color" href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." data-no-swup="">+9 3(049) 482 95 23</a></span>
+            </li>
+          </ul>
+          <div class="qrt-divider"></div>
+          <div class="qrt-social-links">
+            <div class="qrt-social-links">
+              <h5 class="qrt-mb-40">We are social</h5>
+              <ul class="qrt-social-list">
+                <li><a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-behance"></i></a></li>
+                <li><a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-dribbble"></i></a></li>
+                <li><a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="qrt-divider"></div>
+          <div class="qrt-instagram">
+            <h5 class="qrt-mb-40">Instagram</h5>
+            <div class="qrt-instagram-frame">
+              <a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="./Quarty_files/7.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="./Quarty_files/8.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="./Quarty_files/9.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="./Quarty_files/10.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="./Quarty_files/11.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="./Quarty_files/12.jpg" alt="instagram post">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="qrt-divider"></div>
+          <h5 class="qrt-mb-40">Latest Publications</h5>
+          <div class="qrt-post-frame qrt-sm-post">
+            <a href="https://elanta.app/nazar/quarty-demo/dark/publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
+              <img src="./Quarty_files/1.jpg" alt="thumbnail">
+            </a>
+            <div class="qrt-post-descr">
+              <div>
+                <h4 class="qrt-cursor-color qrt-post-title"><a href="https://elanta.app/nazar/quarty-demo/dark/publication.html" class="qrt-anima-link">Architecture of Observation Towers</a></h4>
+                <div class="qrt-port-short-text">It seems to be human nature to enjoy a view, getting the higher ground and taking in our surroundings has become a significant aspect of architecture across the world. Observation towers which allow
+                  visitors to climb and observe their surroundings, provide a chance to take in the beauty of the land while at the same time adding something unique and impressive to the landscape.</div>
+              </div>
+            </div>
+          </div>
+          <div class="qrt-post-frame qrt-sm-post">
+            <a href="https://elanta.app/nazar/quarty-demo/dark/publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
+              <img src="./Quarty_files/2.jpg" alt="thumbnail">
+            </a>
+            <div class="qrt-post-descr">
+              <div>
+                <h4 class="qrt-cursor-color qrt-post-title"><a href="https://elanta.app/nazar/quarty-demo/dark/publication.html" class="qrt-anima-link">Model Making In Architecture</a></h4>
+                <div class="qrt-port-short-text">The importance of model making in architecture could be thought to have reduced in recent years. With the introduction of new and innovative architecture design technology, is there still a place for
+                  model making in architecture? Stanton Williams, director at Stirling Prize-winning practice, Gavin Henderson, believes that it’s more important than ever.</div>
+              </div>
+            </div>
+          </div>
+          <div class="qrt-post-frame qrt-sm-post">
+            <a href="https://elanta.app/nazar/quarty-demo/dark/publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
+              <img src="./Quarty_files/5.jpg" alt="thumbnail">
+            </a>
+            <div class="qrt-post-descr">
+              <div>
+                <h4 class="qrt-cursor-color qrt-post-title"><a href="https://elanta.app/nazar/quarty-demo/dark/publication.html" class="qrt-anima-link">Can Skyscrapers Be Sustainable</a></h4>
+                <div class="qrt-port-short-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, id, reprehenderit earum quidem error hic deserunt asperiores suscipit. Magni doloribus, ab cumque modi quidem doloremque nostrum quam
+                  tempora, corporis explicabo nesciunt accusamus ad architecto sint voluptatibus tenetur ipsa hic eius.</div>
+              </div>
+            </div>
+          </div>
+          <div class="qrt-divider"></div>
+          <div class="qrt-subscribe">
+            <h5 class="qrt-mb-40">Subscribe our newsletter</h5>
+            <form>
+              <input type="text" placeholder="Email">
+              <button type="submit" class="qrt-btn qrt-btn-sm"><i class="far fa-paper-plane"></i></button>
+            </form>
+          </div>
+          <div class="qrt-divider"></div>
+          <div class="qrt-copy">
+            <!-- author ( Please! Do not delete it. You are awesome! :) -->
+            <div>© Late 2020 Quarty.<br>Design by:&nbsp; <a class="qrt-cursor-scale qrt-cursor-color" href="https://themeforest.net/user/millerdigitaldesign" target="_blank">Nazar Miller</a></div>
+          </div>
+        </div>
+      </div><div class="scrollbar-track scrollbar-track-x" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-x" style="width: 350px; transform: translate3d(0px, 0px, 0px);"></div></div><div class="scrollbar-track scrollbar-track-y" style="display: block;"><div class="scrollbar-thumb scrollbar-thumb-y" style="height: 37.8341px; transform: translate3d(0px, 0px, 0px);"></div></div></div>
+    </div>
+    <div class="qrt-left-bar">
+      <div class="qrt-current-page-title"><a class="qrt-mobile-fix" href="https://elanta.app/nazar/quarty-demo/dark/about-us.html">About</a><a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html">About us</a><a href="https://elanta.app/nazar/quarty-demo/dark/about-me.html">About me</a><a href="https://elanta.app/nazar/quarty-demo/dark/about-us-classic.html">About us classic</a><a href="https://elanta.app/nazar/quarty-demo/dark/about-me-classic.html">About me classic</a></div>
+      <div class="qrt-change-language">
+        <a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-leng qrt-cursor-color qrt-cursor-scale">fr</a>
+        <a href="https://elanta.app/nazar/quarty-demo/dark/about-us.html#." class="qrt-leng qrt-active">En</a>
+      </div>
+    </div>
+    <div class="qrt-curtain"></div>
+    <div id="qrt-dynamic-content" class="qrt-dynamic-content" data-swup="0">
+      <div class="qrt-content" id="qrt-scroll-content" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;"><div class="scroll-content" style="transform: translate3d(0px, -2430px, 0px);">
+        <div class="qrt-half-content-frame">
+          <div class="qrt-left">
+
+            <div class="row qrt-p-0-40">
+              <div class="col-lg-12">
+
+                <div class="qrt-page-cover">
+                  <img src="./Quarty_files/cover3.jpg" alt="our office">
+                  <div class="qrt-about-info qrt-right-position">
+                    <div class="qrt-cover-info">
+                      <ul class="qrt-table">
+                        <li>
+                          <h5 class="qrt-white">Country:</h5><span>Canada</span>
+                        </li>
+                        <li>
+                          <h5 class="qrt-white">City:</h5><span>Toronto</span>
+                        </li>
+                        <li>
+                          <h5 class="qrt-white">Foundation:</h5><span>May, 2012</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+
+                <h3 class="qrt-mb-40">We are creative <br>building - design company</h3>
+
+              </div>
+              <div class="col-lg-8 qrt-mb-25">
+
+                <p>We have intentionally never developed a stylistic formula for our work, which is why our projects never quite look or feel the same. Each of our spaces is the result of our ability to listen, which has turned our designs and
+                  buildings into personal reflections of our clients’ personalities and values, which we co-construct through research, workshops and surveys.</p>
+
+                <p>In our studio, every project is an open ended enquiry, helping people to challenge their existing state and work towards an alternative, desired one. We provide guidance, expertise and experience across all phases in the
+                  architectural process, ranging from thinking, to designing, building, and ultimately finding the right way to communicate the results.</p>
+
+              </div>
+              <div class="col-lg-12">
+
+                <blockquote>
+                  Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, wellbeing and hopefully, happiness.
+                </blockquote>
+
+              </div>
+            </div>
+
+            <div class="qrt-divider"></div>
+
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+
+                <div class="qrt-counter-frame">
+                  <div class="qrt-counter-box">
+                    <span class="qrt-counter">10</span>
+                  </div>
+                  <h5>Years Experience</h5>
+                </div>
+
+              </div>
+              <div class="col-lg-3 col-sm-6">
+
+                <div class="qrt-counter-frame">
+                  <div class="qrt-counter-box">
+                    <span class="qrt-counter">143</span>
+                  </div>
+                  <h5>Completed Projects</h5>
+                </div>
+
+              </div>
+              <div class="col-lg-3 col-sm-6">
+
+                <div class="qrt-counter-frame">
+                  <div class="qrt-counter-box">
+                    <span class="qrt-counter">114</span>
+                  </div>
+                  <h5>Happy Customers</h5>
+                </div>
+
+              </div>
+              <div class="col-lg-3 col-sm-6">
+
+                <div class="qrt-counter-frame">
+                  <div class="qrt-counter-box">
+                    <span class="qrt-counter">20</span>
+                  </div>
+                  <h5>Honors and Awards</h5>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="qrt-divider qrt-space-fix"></div>
+
+            <div class="row">
+              <div class="col-lg-12">
+
+                <h3 class="qrt-mb-40">Our team</h3>
+
+              </div>
+              <div class="col-lg-4">
+
+                <div class="qrt-team-member">
+                  <a href="https://elanta.app/nazar/quarty-demo/dark/about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
+                    <img src="./Quarty_files/tm1.jpg" alt="team member">
+                  </a>
+                  <div class="qrt-team-member-description">
+                    <div class="qrt-member-name">
+                      <h4 class="qrt-white qrt-qrt-mb-5">Viktoria Freeman</h4>
+                      <span>Chief Architect</span>
+                    </div>
+                    <a href="https://elanta.app/nazar/quarty-demo/dark/about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-4">
+
+                <div class="qrt-team-member">
+                  <a href="https://elanta.app/nazar/quarty-demo/dark/about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
+                    <img src="./Quarty_files/tm2.jpg" alt="team member">
+                  </a>
+                  <div class="qrt-team-member-description">
+                    <div class="qrt-member-name">
+                      <h4 class="qrt-white qrt-qrt-mb-5">Paul trueman</h4>
+                      <span>Chief Architect</span>
+                    </div>
+                    <a href="https://elanta.app/nazar/quarty-demo/dark/about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-4">
+
+                <div class="qrt-team-member">
+                  <a href="https://elanta.app/nazar/quarty-demo/dark/about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
+                    <img src="./Quarty_files/tm3.jpg" alt="team member">
+                  </a>
+                  <div class="qrt-team-member-description">
+                    <div class="qrt-member-name">
+                      <h4 class="qrt-white qrt-qrt-mb-5">Emma Newman</h4>
+                      <span>Chief Architect</span>
+                    </div>
+                    <a href="https://elanta.app/nazar/quarty-demo/dark/about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="qrt-divider qrt-space-fix"></div>
+
+            <div class="row">
+              <div class="col-lg-12">
+
+                <h3 class="qrt-mb-40">Prices</h3>
+
+              </div>
+              <div class="col-lg-4">
+
+                <div class="qrt-a qrt-price">
+                  <div class="qrt-price-body">
+                    <h5 class="qrt-mb-20">Starter Price</h5>
+                    <div class="qrt-price-cost">
+                      <div class="qrt-number">FREE<sup>*</sup></div>
+                    </div>
+                    <ul class="qrt-price-list">
+                      <li>Ui Design</li>
+                      <li>Web Development</li>
+                      <li class="qrt-empty-item">Logo design</li>
+                      <li class="qrt-empty-item">SEO optimization</li>
+                      <li class="qrt-empty-item">Wordpress integration</li>
+                    </ul>
+                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="https://elanta.app/nazar/quarty-demo/dark/contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
+                    <div class="qrt-asterisk"><sup>*</sup>Free only when ordering paid services</div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-4">
+
+                <div class="qrt-a qrt-price qrt-popular-price">
+                  <div class="qrt-price-body">
+                    <h5 class="qrt-mb-20">Hourly payment</h5>
+                    <div class="qrt-price-cost">
+                      <div class="qrt-number"><span>$</span>29<span>h</span></div>
+                    </div>
+                    <ul class="qrt-price-list">
+                      <li>Ui Design</li>
+                      <li>Web Development</li>
+                      <li>Logo design</li>
+                      <li class="qrt-empty-item">SEO optimization</li>
+                      <li class="qrt-empty-item">Wordpress integration</li>
+                    </ul>
+                    <a class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link" href="https://elanta.app/nazar/quarty-demo/dark/contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-lg-4">
+
+                <div class="qrt-a qrt-price">
+                  <div class="qrt-price-body">
+                    <h5 class="qrt-mb-20">Full time</h5>
+                    <div class="qrt-price-cost">
+                      <div class="qrt-number"><span>$</span>2999<span>m</span></div>
+                    </div>
+                    <ul class="qrt-price-list">
+                      <li>Ui Design</li>
+                      <li>Web Development</li>
+                      <li>Logo design</li>
+                      <li>SEO optimization</li>
+                      <li>Wordpress integration</li>
+                    </ul>
+                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="https://elanta.app/nazar/quarty-demo/dark/contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="qrt-divider qrt-space-fix"></div>
+
+            <div class="row">
+              <div class="col-lg-12">
+
+                <h3 class="qrt-mb-40">Testimonials</h3>
+
+              </div>
+              <div class="col-lg-12">
+
+                <div class="swiper-container qrt-testimonials-slider swiper-container-horizontal" style="overflow: visible">
+                  <div class="swiper-wrapper" style="transform: translate3d(-363px, 0px, 0px); transition-duration: 0ms;">
+                    <div class="swiper-slide swiper-slide-prev" style="width: 343px; margin-right: 20px;">
+                      <div class="qrt-testimonial">
+                        <div class="qrt-testimonial-header">
+                          <img src="./Quarty_files/t1.jpg" alt="customer">
+                          <div class="qrt-testimonial-name">
+                            <h4 class="qrt-mb-5">Paul Trueman</h4>
+                            <div class="qrt-el-suptitle">Chief Architect</div>
+                          </div>
+                        </div>
+                        <div class="qrt-testimonial-text">
+                          We worked with Quarty Studio for approximately 2 years on the complete overhaul of our house. This included the design of the project, and the execution of the work. Quarty provided excellent design ideas but
+                          were also
+                          indispensable in managing the practical side of the build.
+                        </div>
+                        <ul class="qrt-stars">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" style="width: 343px; margin-right: 20px;">
+                      <div class="qrt-testimonial">
+                        <div class="qrt-testimonial-header">
+                          <img src="./Quarty_files/t2.jpg" alt="customer">
+                          <div class="qrt-testimonial-name">
+                            <h4 class="qrt-mb-5">Emma Newman</h4>
+                            <div class="qrt-el-suptitle">Chief Architect</div>
+                          </div>
+                        </div>
+                        <div class="qrt-testimonial-text">
+                          We engaged Paul Trueman of quarty Studio to manage the planning process and to design and manage a full renovation and remodelling of our 1930s house. We really enjoyed working with Paul. We would not hesitate to
+                          recommend Paul and Quarty.
+                        </div>
+                        <ul class="qrt-stars">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" style="width: 343px; margin-right: 20px;">
+                      <div class="qrt-testimonial">
+                        <div class="qrt-testimonial-header">
+                          <img src="./Quarty_files/t3.jpg" alt="customer">
+                          <div class="qrt-testimonial-name">
+                            <h4 class="qrt-mb-5">Viktoria freeman</h4>
+                            <div class="qrt-el-suptitle">Chief Architect</div>
+                          </div>
+                        </div>
+                        <div class="qrt-testimonial-text">
+                          We worked with Quarty Studio for approximately 2 years on the complete overhaul of our house. This included the design of the project, and the execution of the work. Quarty provided excellent design ideas but
+                          were also
+                          indispensable in managing the practical side of the build.
+                        </div>
+                        <ul class="qrt-stars">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li class="qrt-empty"><i class="fas fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+              </div>
+              <div class="col-6">
+
+                <div class="swiper-testi-pagination qrt-cursor-color qrt-cursor-scale swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+
+              </div>
+              <div class="col-6">
+
+                <div class="qrt-slider-nav">
+                  <!-- prev -->
+                  <div class="qrt-slider-prev qrt-testi-prev qrt-cursor-color qrt-cursor-scale" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"><i class="fas fa-arrow-left"></i></div>
+                  <!-- next -->
+                  <div class="qrt-slider-next qrt-testi-next qrt-cursor-color qrt-cursor-scale swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"><i class="fas fa-arrow-right"></i></div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="qrt-divider"></div>
+
+            <div class="row">
+              <div class="col-lg-12">
+
+                <div class="swiper-container qrt-brands-slider swiper-container-horizontal" style="overflow: visible">
+                  <div class="swiper-wrapper" style="transform: translate3d(-1996.5px, 0px, 0px); transition-duration: 6000ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b4.svg" alt="brand">
+                    </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b5.svg" alt="brand">
+                    </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b6.svg" alt="brand">
+                    </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="6" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b7.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b1.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b2.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b3.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b4.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b5.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="5" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b6.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="6" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b7.svg" alt="brand">
+                    </div>
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b1.svg" alt="brand">
+                    </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="1" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b2.svg" alt="brand">
+                    </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b3.svg" alt="brand">
+                    </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 161.5px; margin-right: 20px;">
+                      <img src="./Quarty_files/b4.svg" alt="brand">
+                    </div></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+
+                <div class="qrt-call-to-action">
+                  <h4>Do you have a project?</h4>
+                  <a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="https://elanta.app/nazar/quarty-demo/dark/contact.html"><span>Let's discuss</span></a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div id="fixed" class="qrt-right" style="top: 2430px; left: 0px; position: relative;">
+            <div class="qrt-half-banner qrt-left-align qrt-animated-show">
+              <div class="qrt-image-frame">
+                <img src="./Quarty_files/banner1.jpg" alt="banner">
+              </div>
+              <div class="qrt-overlay">
+                <div class="qrt-scroll-hint">
+                  <span></span>
+                </div>
+                <div class="qrt-banner-title">
+                  <h2 class="qrt-white qrt-mb-10">About us</h2>
+                  <div class="qrt-divider-2"></div>
+                  <div class="qrt-text qrt-white qrt-mb-20">Dolor sit amet, consectetur adipisicing elit. <br>Vel excepturi, earum inventore.</div>
+                  <a href="https://elanta.app/nazar/quarty-demo/dark/contact.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-anima-link"><span>Get in touch</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><div class="scrollbar-track scrollbar-track-x" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-x" style="width: 1266px; transform: translate3d(0px, 0px, 0px);"></div></div><div class="scrollbar-track scrollbar-track-y" style="display: block;"><div class="scrollbar-thumb scrollbar-thumb-y" style="height: 20px; transform: translate3d(0px, 192.554px, 0px); transform-origin: center bottom;"></div></div></div>
+    </div>
+  </div>
+
+  <!-- jquery js -->
+  <script src="./Quarty_files/jquery.min.js.download"></script>
+  <!-- anime js -->
+  <script src="./Quarty_files/anime.min.js.download"></script>
+  <!-- swiper js -->
+  <script src="./Quarty_files/swiper.min.js.download"></script>
+  <!-- progressbar js -->
+  <script src="./Quarty_files/progressbar.min.js.download"></script>
+  <!-- smooth scrollbar js -->
+  <script src="./Quarty_files/smooth-scrollbar.min.js.download"></script>
+  <!-- overscroll js -->
+  <script src="./Quarty_files/overscroll.min.js.download"></script>
+  <!-- isotope js -->
+  <script src="./Quarty_files/isotope.min.js.download"></script>
+  <!-- fancybox js -->
+  <script src="./Quarty_files/fancybox.min.js.download"></script>
+  <!-- swup js -->
+  <script src="./Quarty_files/swup.min.js.download"></script>
+  <!-- mapbox js -->
+  <script src="./Quarty_files/mapbox.min.js.download"></script>
+
+  <!-- main js -->
+  <script src="./Quarty_files/main.js.download"></script>
+
+
+
+
+</body></html>
