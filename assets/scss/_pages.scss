@@ -1618,6 +1618,7 @@ $theme3: #52555a;
 
                     &:hover img {
                         filter: brightness(110%);
+                        transition: .4s ease-in-out;
                     }
 
                     &:before {
@@ -1649,6 +1650,7 @@ $theme3: #52555a;
 
                     &:hover .architect {
                         background-color: $white;
+                        transition: .4s ease-in-out;
                     }
 
                     & .card-body {
@@ -1698,6 +1700,7 @@ $theme3: #52555a;
 
                     &:hover img {
                         filter: brightness(110%);
+                        transition: .4s ease-in-out;
                     }
 
                     &:before {
@@ -1729,6 +1732,7 @@ $theme3: #52555a;
 
                     &:hover .architect {
                         background-color: $white;
+                        transition: .4s ease-in-out;
                     }
 
                     & .card-body {
@@ -1768,6 +1772,7 @@ $theme3: #52555a;
 
                     &:hover img {
                         filter: brightness(110%);
+                        transition: .4s ease-in-out;
                     }
 
                     & .imgs {
@@ -1782,6 +1787,7 @@ $theme3: #52555a;
 
                     &:hover .architect {
                         background-color: $white;
+                        transition: .4s ease-in-out;
                     }
 
                     & .card-body {
