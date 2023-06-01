@@ -91,9 +91,14 @@
                                         <img src="assets/img/logo.svg" class="img-fluid" alt="">
                                     </a>
                                     <div class="d-lg-none d-md-none d-block d-flex icons align-items-center">
-                                        <button class="navbar-toggler text-white" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                                            <span><i class="fas fa-bars text-white"></i></span>
+                                        <button
+                                            class="navbar-toggler deletebtn-1 bg-transparent text-white active position-relative border-0"
+                                            type="button" onclick="MyFunction()" data-bs-toggle="collapse"
+                                            data-bs-target="#collapsibleNavbar">
+                                            <span class="icn-3 icons position-absolute"><i
+                                                    class="fas fa-bars text-white"></i></span>
+                                            <span class="icn-4 icons position-absolute"><i
+                                                    class="fas fa-times"></i></span>
                                         </button>
                                         <button class="btn text-white border-0" type="button" data-bs-toggle="offcanvas"
                                             data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
@@ -1405,6 +1410,11 @@
             lightbox.on('open', (target) => {
                 console.log('lightbox opened');
             });
+    </script>
+    <script>
+        function MyFunction() {
+            document.body.classList.toggle('navbar-toggler')
+        }
     </script>
 </body>
 

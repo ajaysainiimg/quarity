@@ -87,25 +87,34 @@
                                         <img src="assets/img/logo.svg" class="img-fluid" alt="">
                                     </a>
                                     <div class="d-lg-none d-md-none d-block d-flex icons align-items-center">
-                                        <button class="navbar-toggler text-white" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                                            <span><i class="fas fa-bars text-white"></i></span>
-
+                                        <button
+                                            class="navbar-toggler deletebtn-1 bg-transparent text-white active position-relative border-0"
+                                            type="button" onclick="MyFunction()" data-bs-toggle="collapse"
+                                            data-bs-target="#collapsibleNavbar">
+                                            <span class="icn-3 icons position-absolute"><i
+                                                    class="fas fa-bars text-white"></i></span>
+                                            <span class="icn-4 icons position-absolute"><i
+                                                    class="fas fa-times"></i></span>
                                         </button>
                                         <button class="btn text-white border-0" type="button" data-bs-toggle="offcanvas"
                                             data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                                             <i class="fas fa-search"></i>
                                         </button>
-                                        <button class="deletebtn bg-transparent text-white border-0 active position-relative" onclick="myFunction()" type="button"
-                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasright"
-                                            aria-controls="offcanvasright">
-                                            <span class="icn-1 icns position-absolute"><i class="fas fa-ellipsis-v"></i></span>
-                                            <span class="icn-2 icns position-absolute"><i class="fas fa-times"></i></span>
-                                        </button>  
+                                        <button
+                                            class="deletebtn bg-transparent text-white border-0 active position-relative"
+                                            onclick="myFunction()" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasright" aria-controls="offcanvasright">
+                                            <span class="icn-1 icns position-absolute"><i
+                                                    class="fas fa-ellipsis-v"></i></span>
+                                            <span class="icn-2 icns position-absolute"><i
+                                                    class="fas fa-times"></i></span>
+                                        </button>
                                     </div>
-                                    <div class="collapse h-auto navbar-collapse justify-content-center" id="collapsibleNavbar">
+                                    <div class="collapse h-auto navbar-collapse justify-content-center"
+                                        id="collapsibleNavbar">
                                         <ul class="navbar-nav align-items-center">
-                                            <li class="nav-item active five d-flex align-items-center position-relative">
+                                            <li
+                                                class="nav-item active five d-flex align-items-center position-relative">
                                                 <a href="index.html" class="nav-link active">
                                                     HOME
                                                 </a>
@@ -211,12 +220,15 @@
                                             data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                                             <i class="fas fa-search"></i>
                                         </button>
-                                        <button class="deletebtn bg-transparent text-white border-0 active position-relative" onclick="myFunction()" type="button"
-                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasright"
-                                            aria-controls="offcanvasright">
-                                            <span class="icn-1 icns position-absolute"><i class="fas fa-ellipsis-v"></i></span>
-                                            <span class="icn-2 icns position-absolute"><i class="fas fa-times"></i></span>
-                                        </button>  
+                                        <button
+                                            class="deletebtn bg-transparent text-white border-0 active position-relative"
+                                            onclick="myFunction()" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasright" aria-controls="offcanvasright">
+                                            <span class="icn-1 icns position-absolute"><i
+                                                    class="fas fa-ellipsis-v"></i></span>
+                                            <span class="icn-2 icns position-absolute"><i
+                                                    class="fas fa-times"></i></span>
+                                        </button>
                                     </div>
                                 </div>
                             </nav>
@@ -242,8 +254,9 @@
                         </div>
                         <div class="col architects px-0">
                             <div class="vdeo position-relative w-100 h-100">
-                                <video class="qrt-video-background position-absolute" autoplay="autoplay" loop="loop" muted=""
-                                    defaultmuted="" playsinline="" oncontextmenu="return false;" preload="auto">
+                                <video class="qrt-video-background position-absolute" autoplay="autoplay" loop="loop"
+                                    muted="" defaultmuted="" playsinline="" oncontextmenu="return false;"
+                                    preload="auto">
                                     <source src="assets/img/bg-video.mp4">
                                 </video>
                                 <div class="position-relative d-flex align-items-center h-100 w-100">
@@ -252,7 +265,8 @@
                                             <div class="heading text-white">Architecture - <br> petrified music</div>
                                             <div class="line"></div>
                                             <div class="content text-white">Change is an opportunity! We want to
-                                                lead people towards durable solutions and designs that enhance feelings of
+                                                lead people towards durable solutions and designs that enhance feelings
+                                                of
                                                 closeness, and hopefully, happiness.
                                             </div>
                                             <div class="buttn ">
@@ -282,33 +296,28 @@
                             </div>
                         </div>
                         <!-- menu  -->
-                        <div class="offcanvas offcanvas-end position-absolute bg-light" tabindex="-1" id="offcanvasright"
-                            aria-labelledby="offcanvasrightLabel">
+                        <div class="offcanvas offcanvas-end position-absolute bg-light" tabindex="-1"
+                            id="offcanvasright" aria-labelledby="offcanvasrightLabel">
                             <div class="offcanvas-body">
                                 <div class="row">
                                     <div class="col place">
-                                        <div
-                                            class="foundation d-flex justify-content-between align-items-center pb-3">
+                                        <div class="foundation d-flex justify-content-between align-items-center pb-3">
                                             COUNTRY
                                             <Span class="plac text-secondary">Canada</Span>
                                         </div>
-                                        <div
-                                            class="foundation d-flex justify-content-between align-items-center pb-3">
+                                        <div class="foundation d-flex justify-content-between align-items-center pb-3">
                                             CITY
                                             <Span class="plac text-secondary">Toronto</Span>
                                         </div>
-                                        <div
-                                            class="foundation d-flex justify-content-between align-items-center pb-3">
+                                        <div class="foundation d-flex justify-content-between align-items-center pb-3">
                                             STREET
                                             <Span class="plac text-secondary">North Avenue 31B,</Span>
                                         </div>
-                                        <div
-                                            class="foundation d-flex justify-content-between align-items-center pb-3">
+                                        <div class="foundation d-flex justify-content-between align-items-center pb-3">
                                             EMAIL
                                             <Span class="plac text-secondary">quarty.inbox@mail.com</Span>
                                         </div>
-                                        <div
-                                            class="foundation d-flex justify-content-between align-items-center pb-3">
+                                        <div class="foundation d-flex justify-content-between align-items-center pb-3">
                                             PHONE
                                             <Span class="plac text-secondary">+9 3(049) 482 95 23</Span>
                                         </div>
@@ -359,38 +368,32 @@
                                 <div class="row insta-image g-3">
                                     <div class="col-4 px-2 ">
                                         <div class="images w-100 h-100">
-                                            <img src="assets/img/menu1.jpg" alt=""
-                                                class="w-100 h-100 img-fluid">
+                                            <img src="assets/img/menu1.jpg" alt="" class="w-100 h-100 img-fluid">
                                         </div>
                                     </div>
                                     <div class="col-4 px-2">
                                         <div class="images w-100 h-100">
-                                            <img src="assets/img/menu2.jpg" alt=""
-                                                class="w-100 h-100 img-fluid">
+                                            <img src="assets/img/menu2.jpg" alt="" class="w-100 h-100 img-fluid">
                                         </div>
                                     </div>
                                     <div class="col-4 px-2">
                                         <div class="images w-100 h-100">
-                                            <img src="assets/img/menu3.jpg" alt=""
-                                                class="w-100 h-100 img-fluid">
+                                            <img src="assets/img/menu3.jpg" alt="" class="w-100 h-100 img-fluid">
                                         </div>
                                     </div>
                                     <div class="col-4 px-2">
                                         <div class="images w-100 h-100">
-                                            <img src="assets/img/menu4.jpg" alt=""
-                                                class="w-100 h-100 img-fluid">
+                                            <img src="assets/img/menu4.jpg" alt="" class="w-100 h-100 img-fluid">
                                         </div>
                                     </div>
                                     <div class="col-4 px-2">
                                         <div class="images w-100 h-100">
-                                            <img src="assets/img/menu5.jpg" alt=""
-                                                class="w-100 h-100 img-fluid">
+                                            <img src="assets/img/menu5.jpg" alt="" class="w-100 h-100 img-fluid">
                                         </div>
                                     </div>
                                     <div class="col-4 px-2">
                                         <div class="images w-100 h-100">
-                                            <img src="assets/img/menu6.jpg" alt=""
-                                                class="w-100 h-100 img-fluid">
+                                            <img src="assets/img/menu6.jpg" alt="" class="w-100 h-100 img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -487,12 +490,16 @@
     <script type="module" src="assets/js/main.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
     <script>
         function myFunction() {
             document.body.classList.toggle('toggle-slider')
+        }
+    </script>
+    <script>
+        function MyFunction() {
+            document.body.classList.toggle('navbar-toggler')
         }
     </script>
 
